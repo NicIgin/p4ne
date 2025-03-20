@@ -19,7 +19,10 @@ while a <= 20:
 def key_value(net):
     return  (int(net.netmask),int(net.network_address))
 
-print(sorted(listNets,key=key_value))
+sortedNets = sorted(listNets,key=key_value)
+
+for n in sortedNets:
+    print("Mask: %2d    IP: %12s" % (n.prefixlen,str(n.network_address)))
 
 
 
