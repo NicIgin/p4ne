@@ -14,4 +14,4 @@ for i in glob.glob("*.log"):
                 mask = j.strip()[posSubstr + 10:].split(" ")[1]
             else:
                 mask = ""
-            print(ip + " " + mask)
+            print("IP: %-15s   Mask: %-15s" % (ip,mask))
