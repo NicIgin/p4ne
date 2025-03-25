@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p4ne</title>
+</head>
+<body>
+Интерфейсы хоста {{ host }}
+<ul>
+    {% for interface in interfaces %}
+    <li>{{ interface }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
