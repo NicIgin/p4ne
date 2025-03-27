@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Процессы по кол-ву памяти</title>
+</head>
+<body>
+{% for proc in procs %}
+<p>Процесс: {{ proc[0] }}, занято памяти: {{ proc[1] }}</p>
+{% endfor %}
+</body>
+</html>
